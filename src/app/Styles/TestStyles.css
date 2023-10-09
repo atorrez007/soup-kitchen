@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "YoungSerif";
+  src: local("YoungSerif") url("../assets/fonts/YoungSerif-Regular.ttf");
+}
+@media (min-width: 320px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+    width: 100vw;
+    font-family: "YoungSerif";
+    background-color: red;
+    font-size: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    width: 100vw;
+    font-family: "YoungSerif";
+    background-color: orange;
+    font-size: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    width: 100vw;
+    font-family: "YoungSerif";
+    background-color: yellow;
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=TestStyles.css.map */
