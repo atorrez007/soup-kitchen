@@ -5,20 +5,23 @@
 @media (min-width: 320px) {
   .main-container {
     display: flex;
+    flex-direction: column;
+    height: 5em;
     justify-content: center;
-    margin-top: 5em;
-    width: 100vw;
+    align-items: center;
+    margin-top: 3em;
+    width: 100%;
     font-family: "YoungSerif";
     background-color: red;
-    font-size: 80px;
+    font-size: 40px;
   }
 }
 @media (min-width: 768px) {
   .main-container {
     display: flex;
     justify-content: center;
-    margin-top: 3em;
-    width: 100vw;
+    height: 5em;
+    width: 100%;
     font-family: "YoungSerif";
     background-color: orange;
     font-size: 40px;
@@ -28,10 +31,30 @@
   .main-container {
     display: flex;
     justify-content: center;
-    margin-top: 0%;
-    width: 100vw;
+    height: 5em;
+    width: 100%;
     font-family: "YoungSerif";
-    background-color: yellow;
-    font-size: 20px;
+    background-color: rgb(64, 160, 90);
+    font-size: 40px;
   }
+}
+
+.button-container {
+  display: flex;
+  width: 3em;
+  justify-content: center;
+  height: 1em;
+}
+
+.button-styles {
+  font-size: 18px;
+  height: 2em;
+  border: none;
+  width: 3em;
+  background-color: white;
+  margin-right: 1em;
+}
+.button-styles:hover {
+  transition: 0.3s;
+  background-color: darkgray;
 }/*# sourceMappingURL=TestStyles.css.map */
