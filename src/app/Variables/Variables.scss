@@ -1,8 +1,24 @@
 @font-face {
-  font-family: "YoungSerif";
-  src: local("YoungSerif") url("../assets/fonts/YoungSerif-Regular.ttf");
+  font-family: "RobotoRegular";
+  src: local("RobotoRegular") url("../assets/fonts/Roboto-Regular.ttf");
 }
+@font-face {
+  font-family: "RobotoBold";
+  src: local("RobotoBold") url("../assets/fonts/Roboto-Bold.ttf");
+}
+// Fonts
 
-$fontMedium: "YoungSerif";
+$fontMedium: "RobotoRegular";
+$fontBold: "RobotoBold";
 
+// Font Colors
 $graytext: rgb(86, 88, 90);
+$linkText: #4bff3c;
+$copyrightColor: #2a435d;
+
+// Site Colors
+
+$redBackround: #cc3333;
+$blackBackround: #2a435d;
+$creamBackground: #fff8ee;
+$white: #ffffff;

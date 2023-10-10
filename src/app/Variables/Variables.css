@@ -1,4 +1,8 @@
 @font-face {
-  font-family: "YoungSerif";
-  src: local("YoungSerif") url("../assets/fonts/YoungSerif-Regular.ttf");
+  font-family: "RobotoRegular";
+  src: local("RobotoRegular") url("../assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: local("RobotoBold") url("../assets/fonts/Roboto-Bold.ttf");
 }/*# sourceMappingURL=Variables.css.map */

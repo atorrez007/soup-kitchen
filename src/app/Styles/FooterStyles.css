@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: local("RobotoRegular") url("../assets/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: local("RobotoBold") url("../assets/fonts/Roboto-Bold.ttf");
+}
+@media (min-width: 320px) {
+  .footer-styles {
+    height: auto;
+    width: auto;
+    background-color: #cc3333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer-styles {
+    height: auto;
+    width: auto;
+    background-color: #cc3333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .footer-styles {
+    height: auto;
+    width: auto;
+    background-color: #cc3333;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 992px) {
+  .contact-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 320px) {
+  .contact-styles {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    color: #ffffff;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 12px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .contact-styles span {
+    display: flex;
+    padding-bottom: 0.2em;
+  }
+}
+@media (min-width: 768px) {
+  .contact-styles {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: "RobotoRegular", sans-serif;
+    font-weight: 400;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+  }
+  .contact-styles span {
+    display: flex;
+    padding-bottom: 0.3em;
+  }
+}
+@media (min-width: 992px) {
+  .contact-styles {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: "RobotoRegular", sans-serif;
+    font-weight: 400;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+  }
+  .contact-styles span {
+    display: flex;
+    padding-bottom: 0.3em;
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  background-color: #2a435d;
+  color: #ffffff;
+  font-family: "RobotoBold", sans-serif;
+  font-size: 13px;
+  width: 100%;
+}/*# sourceMappingURL=FooterStyles.css.map */
