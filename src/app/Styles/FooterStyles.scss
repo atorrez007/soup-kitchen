@@ -1,13 +1,14 @@
 @import "../Breakpoints/Breakpoints.scss";
 @import "../Variables/Variables.scss";
 
-.footer-styles {
+.footer {
   @include sm {
     // padding: 1em;
     height: auto;
-    width: auto;
+    width: 100%;
     background-color: $redBackround;
     position: fixed;
+    justify-content: center;
     bottom: 0;
     left: 0;
     right: 0;
@@ -33,66 +34,113 @@
     right: 0;
   }
 }
-.contact-container {
-  @include md {
-    // border: 1px black solid;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  @include lg {
-    // border: 1px black solid;
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-.contact-styles {
+.footer-container {
   @include sm {
-    display: flex;
-    align-items: left;
-    flex-direction: column;
-    padding-left: 2em;
-    padding-bottom: 1em;
-    color: $white;
-    font-family: $fontMedium, sans-serif;
-    font-size: 12px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    span {
-      display: flex;
-      padding-bottom: 0.2em;
+    .footer-container {
+      grid-template-columns: 1fr;
     }
   }
   @include md {
-    display: flex;
-    // justify-content: space-around;
-    align-items: left;
-    flex-direction: column;
-    color: $white;
-    font-family: $fontMedium, sans-serif;
-    font-weight: 400;
-    padding-left: 1em;
-    padding-bottom: 0.5em;
-    span {
-      display: flex;
-      padding-bottom: 0.3em;
-    }
+    max-width: 90%;
+    display: grid;
+    margin: auto;
+    // width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-gap: 40px;
+    place-items: center;
   }
+
   @include lg {
-    display: flex;
-    // justify-content: space-around;
-    align-items: left;
-    flex-direction: column;
-    color: $white;
-    font-family: $fontMedium, sans-serif;
-    font-weight: 400;
-    padding-left: 1em;
-    padding-bottom: 0.5em;
-    span {
-      display: flex;
-      padding-bottom: 0.3em;
-    }
+    max-width: 50%;
+    // width: 50%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
   }
-  // align-items: center;
-  // justify-content: center;
+}
+
+.left {
+  height: 100%;
+  max-width: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: $white;
+  font-family: $fontMedium, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  h3 {
+    font-family: $nunito, sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding-bottom: 0.2rem;
+  }
+  p {
+    font-size: 0.9em;
+    line-height: 0.2em;
+    font-family: $nunito, sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+}
+
+.middle {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: $white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  h3 {
+    font-size: 1.2rem;
+    font-family: $nunito, sans-serif;
+    font-weight: 800;
+    padding-bottom: 0.2rem;
+  }
+  p {
+    font-family: $nunito, sans-serif;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 0.2em;
+    white-space: nowrap;
+  }
+}
+
+.right {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: $white;
+  font-family: $fontMedium, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  h3 {
+    font-size: 1.2rem;
+    padding-bottom: 0.2rem;
+    font-family: $nunito, sans-serif;
+    font-weight: 800;
+  }
+  p {
+    font-size: 0.9em;
+    line-height: 0.2em;
+    font-family: $nunito, sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+}
+
+.company-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  margin-bottom: 0.8em;
+  // border: 1px black solid;
+  padding: 1em;
+  line-height: 0.2em;
 }
 
 .copyright {
@@ -103,4 +151,10 @@
   font-family: $fontBold, sans-serif;
   font-size: 13px;
   width: 100%;
+}
+
+.socials {
+  padding-left: 1em;
+  display: flex;
+  align-items: center;
 }
